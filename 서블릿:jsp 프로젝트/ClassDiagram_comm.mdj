@@ -1219,11 +1219,30 @@
 									"model": {
 										"$ref": "AAAAAAGDx0si45GMqb0="
 									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGDzEIONcNXStE=",
+											"_parent": {
+												"$ref": "AAAAAAGDx0si5JGUKbg="
+											},
+											"model": {
+												"$ref": "AAAAAAGDzEIOJ8NUnvM="
+											},
+											"font": "Arial;13;0",
+											"left": 829,
+											"top": 446,
+											"width": 256.592529296875,
+											"height": 13,
+											"text": "-dataSource: DataSource",
+											"horizontalAlignment": 0
+										}
+									],
 									"font": "Arial;13;0",
 									"left": 824,
 									"top": 441,
 									"width": 266.592529296875,
-									"height": 10
+									"height": 23
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1246,7 +1265,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 829,
-											"top": 456,
+											"top": 469,
 											"width": 256.592529296875,
 											"height": 13,
 											"text": "+getByFestival(선택한 상품): List<선택한 상품>",
@@ -1263,7 +1282,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 829,
-											"top": 471,
+											"top": 484,
 											"width": 256.592529296875,
 											"height": 13,
 											"text": "+insert(res: \bComment): \bvoid",
@@ -1280,7 +1299,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 829,
-											"top": 486,
+											"top": 499,
 											"width": 256.592529296875,
 											"height": 13,
 											"text": "+delete(cno: Long): int",
@@ -1297,7 +1316,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 829,
-											"top": 501,
+											"top": 514,
 											"width": 256.592529296875,
 											"height": 13,
 											"text": "+getByRno(cno: Long): \bComment",
@@ -1306,7 +1325,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 824,
-									"top": 451,
+									"top": 464,
 									"width": 266.592529296875,
 									"height": 68
 								},
@@ -2630,13 +2649,30 @@
 											"height": 13,
 											"text": "+CommService(): CommServiceImpl",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGDzEHPkcFlc84=",
+											"_parent": {
+												"$ref": "AAAAAAGDyY5WU3/2IDQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGDzEHPhcFa0q0="
+											},
+											"font": "Arial;13;0",
+											"left": 477,
+											"top": 703,
+											"width": 211.28173828125,
+											"height": 13,
+											"text": "+getConnection(): Connection",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 472,
 									"top": 683,
 									"width": 221.28173828125,
-									"height": 23
+									"height": 38
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -3509,6 +3545,18 @@
 							}
 						}
 					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGDzEIOJ8NUnvM=",
+							"_parent": {
+								"$ref": "AAAAAAGDx0si45GMqb0="
+							},
+							"name": "dataSource",
+							"visibility": "private",
+							"type": "DataSource"
+						}
+					],
 					"operations": [
 						{
 							"_type": "UMLOperation",
@@ -3753,6 +3801,25 @@
 										"$ref": "AAAAAAGDyY6LjoFhPyU="
 									},
 									"type": "CommServiceImpl",
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGDzEHPhcFa0q0=",
+							"_parent": {
+								"$ref": "AAAAAAGDyY5WUn/t1A8="
+							},
+							"name": "getConnection",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGDzEHPhcFbdng=",
+									"_parent": {
+										"$ref": "AAAAAAGDzEHPhcFa0q0="
+									},
+									"type": "Connection",
 									"direction": "return"
 								}
 							]

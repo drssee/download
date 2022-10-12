@@ -611,7 +611,7 @@
 											"top": 446,
 											"width": 251.798828125,
 											"height": 13,
-											"text": "+resRepository: ResRepository",
+											"text": "-resRepository: ResRepository",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1168,11 +1168,30 @@
 									"model": {
 										"$ref": "AAAAAAGDx0si45GMqb0="
 									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGDzEAGNzBYHFk=",
+											"_parent": {
+												"$ref": "AAAAAAGDx0si5JGUKbg="
+											},
+											"model": {
+												"$ref": "AAAAAAGDzEAGLTBVWRE="
+											},
+											"font": "Arial;13;0",
+											"left": 829,
+											"top": 446,
+											"width": 223,
+											"height": 13,
+											"text": "-dataSource: DataSource",
+											"horizontalAlignment": 0
+										}
+									],
 									"font": "Arial;13;0",
 									"left": 824,
 									"top": 441,
 									"width": 233,
-									"height": 10
+									"height": 23
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1195,7 +1214,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 829,
-											"top": 456,
+											"top": 469,
 											"width": 223,
 											"height": 13,
 											"text": "+insert(res: Reservation): void",
@@ -1212,7 +1231,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 829,
-											"top": 471,
+											"top": 484,
 											"width": 223,
 											"height": 13,
 											"text": "+delete(rno: Long): int",
@@ -1229,7 +1248,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 829,
-											"top": 486,
+											"top": 499,
 											"width": 223,
 											"height": 13,
 											"text": "+getByRno(rno: Long): Reservation",
@@ -1238,7 +1257,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 824,
-									"top": 451,
+									"top": 464,
 									"width": 233,
 									"height": 53
 								},
@@ -2533,13 +2552,30 @@
 											"height": 13,
 											"text": "+ResService(): ResServiceImpl",
 											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGDzD7NsS8nrwY=",
+											"_parent": {
+												"$ref": "AAAAAAGDyZjcPnJC+UQ="
+											},
+											"model": {
+												"$ref": "AAAAAAGDzD7Nmy8ecaA="
+											},
+											"font": "Arial;13;0",
+											"left": 485,
+											"top": 687,
+											"width": 180.96533203125,
+											"height": 13,
+											"text": "+getConnection(): Connection",
+											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 480,
 									"top": 667,
 									"width": 190.96533203125,
-									"height": 23
+									"height": 38
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -3097,6 +3133,7 @@
 							},
 							"name": "resRepository",
 							"stereotype": "",
+							"visibility": "private",
 							"type": {
 								"$ref": "AAAAAAGDx0V31pEDU0o="
 							}
@@ -3322,6 +3359,18 @@
 							}
 						}
 					],
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGDzEAGLTBVWRE=",
+							"_parent": {
+								"$ref": "AAAAAAGDx0si45GMqb0="
+							},
+							"name": "dataSource",
+							"visibility": "private",
+							"type": "DataSource"
+						}
+					],
 					"operations": [
 						{
 							"_type": "UMLOperation",
@@ -3530,6 +3579,25 @@
 									"type": {
 										"$ref": "AAAAAAGDxz0W5pAZ8ZM="
 									},
+									"direction": "return"
+								}
+							]
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGDzD7Nmy8ecaA=",
+							"_parent": {
+								"$ref": "AAAAAAGDyZjcPXI5KV0="
+							},
+							"name": "getConnection",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGDzD71JS9naHE=",
+									"_parent": {
+										"$ref": "AAAAAAGDzD7Nmy8ecaA="
+									},
+									"type": "Connection",
 									"direction": "return"
 								}
 							]
