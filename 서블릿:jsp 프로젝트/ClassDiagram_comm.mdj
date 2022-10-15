@@ -628,7 +628,7 @@
 											"top": 446,
 											"width": 256,
 											"height": 13,
-											"text": "+commRepository: CommRepository",
+											"text": "-commRepository: CommRepository",
 											"horizontalAlignment": 0
 										}
 									],
@@ -3258,6 +3258,7 @@
 							},
 							"name": "commRepository",
 							"stereotype": "",
+							"visibility": "private",
 							"type": {
 								"$ref": "AAAAAAGDx0V31pEDU0o="
 							}
